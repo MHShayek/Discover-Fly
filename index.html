@@ -59,7 +59,7 @@
                     <input id="first-class-count" class="form-control text-center inp-style inp-width" type=""
                         value="0">
                 </div>
-                <div >
+                <div>
                     <button onclick="handleTicketChange('first-class',true)" class="btn btn-default"><i
                             class="fas fa-plus"></i></button>
                     <button onclick="handleTicketChange('first-class',false)" class="btn btn-default"><i
@@ -108,7 +108,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="myBtn" class="btn-style">Book
+                Now</button>
         </div>
 
         <div class="booking-content">
@@ -153,6 +154,9 @@
                 const ticketCount = parseInt(ticketInput.value);
                 return ticketCount;
             }
+            document.getElementById("myBtn").addEventListener("click", function () {
+                alert("Congratulations! You have confirmed your ticket.");
+            });
         </script>
 </body>
 

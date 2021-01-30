@@ -52,7 +52,6 @@
                     <input class="inp-style" type="date" name="">
                 </div>
             </div>
-
             <div>
                 <div>
                     <label for="">First Class($150)<span id="first-class-total"></span></label>
@@ -66,7 +65,6 @@
                             class="fas fa-minus"></i></button>
                 </div>
             </div>
-
             <div>
                 <div>
                     <label for="">Economy ($100)<span id="economy-total"></span></label>
@@ -79,7 +77,6 @@
                             class="fas fa-minus"></i></button>
                 </div>
             </div>
-
             <div class="calculations">
                 <div class="amount">
                     <div class="left">
@@ -89,7 +86,6 @@
                         <p id="total-price">$0</p>
                     </div>
                 </div>
-
                 <div class="amount">
                     <div class="left">
                         <p>Charge 10% VAT</p>
@@ -108,10 +104,8 @@
                     </div>
                 </div>
             </div>
-            <button id="myBtn" class="btn-style">Book
-                Now</button>
+            <button id="myBtn" class="btn-style">Book Now</button>
         </div>
-
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
@@ -119,8 +113,6 @@
                 voluptatibus quam</p>
         </div>
         </section>
-
-        <!--Thank You-->
         <script>
             function handleTicketChange(ticket, isIncrease) {
                 const ticketCount = getInputValue(ticket);
@@ -148,7 +140,6 @@
                 const grandTotal = totalPrice + vat;
                 document.getElementById('grand-total').innerText = '$' + grandTotal;
             }
-
             function getInputValue(ticket) {
                 const ticketInput = document.getElementById(ticket + '-count');
                 const ticketCount = parseInt(ticketInput.value);
